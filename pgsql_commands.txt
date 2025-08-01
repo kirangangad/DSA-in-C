@@ -1,0 +1,35 @@
+su
+
+bcalinuxlcd:/home/bca # service postgresql start;
+bcalinuxlcd:/home/bca # 
+bcalinuxlcd:/home/bca # su postgres
+postgres@bcalinuxlcd:/home/bca> psql
+psql (10.6)
+Type "help" for help.
+CREATE DATABASE
+postgres=# \c practical2
+You are now connected to database "practical2" as user "postgres".
+practical2=# create table student(roll_no int primary key, name varchar(30) not null);
+CREATE TABLE
+practical2=# insert into student values(1,'vaibhav'),(2,'harshal'),(3,'Sanjana'),(4,'gayatri');
+INSERT 0 4
+practical2=# select * from student;
+ roll_no |  name   
+---------+---------
+       1 | vaibhav
+       2 | harshal
+       3 | Sanjana
+       4 | gayatri
+(4 rows)
+
+practical2=# create view v1 as select * from student;
+CREATE VIEW
+practical2=# select * from v1;
+ roll_no |  name   
+---------+---------
+       1 | vaibhav
+       2 | harshal
+       3 | Sanjana
+       4 | gayatri
+(4 rows)
+
