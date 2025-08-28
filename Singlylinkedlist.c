@@ -1,4 +1,4 @@
-//Singly linked list
+//Singly linked_list
 #include<stdio.h>
 #include<malloc.h>
 typedef struct node
