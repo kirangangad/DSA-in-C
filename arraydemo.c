@@ -10,7 +10,7 @@ int main()
 	get(a,n);
 	display(a,n);
 	return 0;
-}
+}                                      //nothing just chill
 void get(int a[20],int n)
 {
 	int i;  
