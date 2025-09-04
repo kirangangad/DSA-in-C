@@ -8,7 +8,7 @@ int main()
 	int a[20],i,n,key,ans;
 	printf("Enter no of elements");
 	scanf("%d",&n);
-	get(a,n);
+	get(a,n);  //update
 	display(a,n);
        printf("\enter key to search");
        scanf("%d",&key);
