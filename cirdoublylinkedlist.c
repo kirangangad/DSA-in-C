@@ -44,7 +44,7 @@ void display(NODE *start)
      printf("\n%u     %d     %u",temp->prev,temp->info,temp->next); 
 }
 int main()
-{
+{     this scentence will create error Bro 
     start=NULL;
     start=create(start);
     display(start);    
